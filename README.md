@@ -12,7 +12,7 @@ So for a successful installation, we must first deploy the contracts, and then u
 
 1. Download full repository to your local machine.
 
-2. Open /deploy/ dir via VS Code
+2. Open /deploy/ folder via VS Code
 
 3. In the .env file, specify your PRIVATE_KEY from which the contracts will be deployed.
 
