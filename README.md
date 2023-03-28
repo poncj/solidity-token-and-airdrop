@@ -1,8 +1,5 @@
 # Assignment 3 | TokenTeam26 & Airdrop
 
-- /production/ files for hosting
-- /deploy/ deploy from local machine
-
 ## How to use
 
 Everything in the /deploy/ folder is intended to be used on local machine.
