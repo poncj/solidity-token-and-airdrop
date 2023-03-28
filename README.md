@@ -14,9 +14,9 @@ So for a successful installation, we must first deploy the contracts, and then u
 
 2. Open /deploy/ folder via VS Code
 
-3. In the .env file, specify your PRIVATE_KEY from which the contracts will be deployed.
+3. In the .env file, specify your `PRIVATE_KEY` from which the contracts will be deployed.
 
-3. Also specify RPC_URL in the .env file.
+3. Also specify `RPC_URL` in the .env file.
 
 3. Open terminal and start to execute commands:
 
@@ -32,7 +32,7 @@ npm i
 node deployToken.js
 ```
 
-4. Аfter executing the previous command in the terminal we should see the address of the token. You must copy this address and specify it in your .env as TOKEN_CONTRACT_ADDRESS.
+4. Аfter executing the previous command in the terminal we should see the address of the token. You must copy this address and specify it in your .env as `TOKEN_CONTRACT_ADDRESS`.
 
 5. Type next command. It will deploy the airdrop contract.
 
@@ -40,7 +40,7 @@ node deployToken.js
 node deployAirdrop.js
 ```
 
-6. Аfter executing the previous command in the terminal we should see the address of the airdrop contract. You must copy this address and specify it in your .env as AIRDROP_CONTRACT_ADDRESS.
+6. Аfter executing the previous command in the terminal we should see the address of the airdrop contract. You must copy this address and specify it in your .env as `AIRDROP_CONTRACT_ADDRESS`.
 
 This is where the deployment of contracts ends. Now we need to configure the files of the /production/ folder.
 
@@ -48,9 +48,9 @@ This is where the deployment of contracts ends. Now we need to configure the fil
 
 1. Open /production/ folder via VS Code.
 
-2. Specify the RPC_URL, TOKEN_CONTRACT_ADDRESS, and AIRDROP_CONTRACT_ADDRESS parameters you specified earlier in the .env file in config.js
+2. Specify the `RPC_URL`, `TOKEN_CONTRACT_ADDRESS`, and `AIRDROP_CONTRACT_ADDRESS` parameters you specified earlier in the .env file in config.js
 
-3. Specify TESTNET_ID as chain_id
+3. Specify `TESTNET_ID` as chain_id
 
 This ends the setup of the /production/ folder. Now you need to upload the files of the /production/ folder to the hosting.
 
