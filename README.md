@@ -47,6 +47,6 @@ node deployAirdrop.js
 
 This is where the deployment of contracts ends. Now we need to configure the files of the production folder
 
-#### How to configure /production/
+### How to configure /production/
 
 
