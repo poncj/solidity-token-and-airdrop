@@ -1,0 +1,109 @@
+:root {
+    --theme-primary-bg-color: #006bbb;
+    --theme-primaty-color: #006bbb;
+
+    --theme-secondary-bg-color: #655DBB;
+    --theme-secondary-color: #30A0E0;
+    
+    --theme-third-bg-color: #3E54AC;
+    --theme-third-color: #FFC872;
+    
+    --theme-fourth-bg-color: #f9f9f9;
+    --theme-fourth-color: #FFE3B3;
+}
+
+body {
+    background-color: var(--theme-secondary-bg-color);
+}
+
+.header-div {
+    background-color: var(--theme-fourth-bg-color);
+} 
+
+.badge-delete {
+    cursor: pointer;
+    border-radius: 2px!important;
+    padding: 6px;
+}
+
+.tabs, 
+.list-group-item{
+    cursor: pointer;
+}
+
+.address-list {
+    max-height: 220px;
+    overflow-x: auto;
+}
+
+.height-lock {
+    min-height: 360px;
+}
+
+.history_block{
+    /* min-height: 459px; */
+}
+
+.history_block{
+    overflow-y: auto;
+}
+
+.theme-primaty-color {
+    color: var(--theme-primaty-color);
+}
+
+.theme-primary-bg-color {
+    background-color: var(--theme-primary-bg-color);
+}
+
+.theme-secondary-color {
+    color: var(--theme-secondary-color);
+}
+
+.theme-secondary-bg-color {
+    background-color: var(--theme-secondary-bg-color);
+}
+
+.theme-third-color {
+    color: var(--theme-third-color);
+}
+
+.theme-third-bg-color {
+    background-color: var(--theme-third-bg-color);
+}
+
+.theme-fourth-color {
+    color: var(--theme-fourth-color);
+}
+
+.theme-fourth-bg-color {
+    background-color: var(--theme-fourth-bg-color);
+}
+
+.choice {
+    max-height: 125px;
+    cursor: pointer;
+}
+
+.choice:active {
+    transform: scale(0.95);
+}
+
+.cover-container {
+    max-width: 60em;
+    /* margin-top: 2em; */
+}
+
+.option_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.play_button {
+    width: 100px;;
+}
+
+.status_log {
+    height: 100%;
+}
