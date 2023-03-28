@@ -46,4 +46,12 @@ This is where the deployment of contracts ends. Now we need to configure the fil
 
 ### How to configure /production/
 
+1. Open /production/ folder via VS Code.
 
+2. Specify the RPC_URL, TOKEN_CONTRACT_ADDRESS, and AIRDROP_CONTRACT_ADDRESS parameters you specified earlier in the .env file in config.js
+
+3. Specify TESTNET_ID as chain_id
+
+This ends the setup of the production folder. Now you need to upload the files of the /production/ folder to the hosting.
+
+## Done!
