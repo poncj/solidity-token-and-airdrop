@@ -52,6 +52,6 @@ This is where the deployment of contracts ends. Now we need to configure the fil
 
 3. Specify TESTNET_ID as chain_id
 
-This ends the setup of the production folder. Now you need to upload the files of the /production/ folder to the hosting.
+This ends the setup of the /production/ folder. Now you need to upload the files of the /production/ folder to the hosting.
 
 ## Done!
