@@ -118,6 +118,7 @@ async function mintTenFreeTokensControl(contractToken, ethers, config, appState)
                 return appState;
             }
             appState.loading = true;
+            $('#token_log_message').text('Loading...');
             let mintData = await contractToken.contract.mintTenTokens({gasLimit: config.BASE_GAS_LIMIT});
             mintData = await mintData.wait();
             let TokenBalanceSigner = await contractToken.contract.balanceOf(contractToken.signer.address);
