@@ -9,28 +9,34 @@ let appState = {
 }
 
 async function run() {
+    try {
+        const contractData = await getContractData();
+
+        const contractToken = new ModelContractToken(contractData);
+        const contractAirdrop = new ModelContractAirdrop(contractData);
+
+        // appState.loading = true;
+
+        tabsControl();
+        addressListControl(appState);
+
+        let TokenBalanceSigner = await contractToken.contract.balanceOf(contractToken.signer.address);
+        $('#token_amount').text(ethers.utils.formatEther(TokenBalanceSigner));
+
+        appState = mintTenFreeTokensControl(contractToken, ethers, config, appState);
+
+        let UserAllowanceToAirdrop = await contractToken.contract.allowance(contractToken.signer.address, contractAirdrop.contract.address);
+        $('#allowance_amount').text(ethers.utils.formatEther(UserAllowanceToAirdrop));
+
+        appState = setAllowanceControl(contractToken, contractAirdrop, ethers, config, appState);
+
+        appState = sendAddressControl(contractToken, contractAirdrop, ethers, config, appState);
     
-    const contractData = await getContractData();
-
-    const contractToken = new ModelContractToken(contractData);
-    const contractAirdrop = new ModelContractAirdrop(contractData);
-
-    // appState.loading = true;
-
-    tabsControl();
-    addressListControl(appState);
-
-    let TokenBalanceSigner = await contractToken.contract.balanceOf(contractToken.signer.address);
-    $('#token_amount').text(ethers.utils.formatEther(TokenBalanceSigner));
-
-    appState = mintTenFreeTokensControl(contractToken, ethers, config, appState);
-
-    let UserAllowanceToAirdrop = await contractToken.contract.allowance(contractToken.signer.address, contractAirdrop.contract.address);
-    $('#allowance_amount').text(ethers.utils.formatEther(UserAllowanceToAirdrop));
-    
-    appState = setAllowanceControl(contractToken, contractAirdrop, ethers, config, appState);
-
-    appState = sendAddressControl(contractToken, contractAirdrop, ethers, config, appState);
+    } catch (err) {
+        $('#token_log_message').text('ERROR! Check console for details');
+        console.log(err);
+        return false;
+    }
 
 }
 
