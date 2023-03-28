@@ -8,9 +8,9 @@ Everything in the /production/ folder is intended to be uploaded to the hosting.
 
 So for a successful installation, we must first deploy the contracts, and then upload the files from the production folder to the hosting.
 
-### How to deploy contracts
+### How to /deploy/ contracts
 
-1. Download repository to your local machine.
+1. Download full repository to your local machine.
 
 2. Open /deploy/ dir via VS Code
 
@@ -42,7 +42,7 @@ node deployAirdrop.js
 
 6. Аfter executing the previous command in the terminal we should see the address of the airdrop contract. You must copy this address and specify it in your .env as AIRDROP_CONTRACT_ADDRESS.
 
-This is where the deployment of contracts ends. Now we need to configure the files of the production folder
+This is where the deployment of contracts ends. Now we need to configure the files of the /production/ folder.
 
 ### How to configure /production/
 
