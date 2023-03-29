@@ -251,12 +251,14 @@ async function sendAddressControl(contractToken, contractAirdrop, ethers, config
 
             if (addressArray.length == 0) {
                 $('#airdrop_log_message').text('ERROR! address list is empty');
+                $('.badge-delete').show();
                 appState.loading = false;
                 return appState;
             }
 
             if (tokenAmount * addressArray.length  > TokenBalanceSigner) {
                 $('#airdrop_log_message').text('ERROR! Not enough tokens');
+                $('.badge-delete').show();
                 appState.loading = false;
                 return appState;
             }
@@ -266,6 +268,7 @@ async function sendAddressControl(contractToken, contractAirdrop, ethers, config
 
             if (tokenAmount * addressArray.length  > UserAllowanceToAirdrop) {
                 $('#airdrop_log_message').text('ERROR! Not enough allowance');
+                $('.badge-delete').show();
                 appState.loading = false;
                 return appState;
             }
