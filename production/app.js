@@ -250,13 +250,13 @@ async function sendAddressControl(contractToken, contractAirdrop, ethers, config
             });
 
             if (addressArray.length == 0) {
-                $('#token_log_message').text('ERROR! address list is empty');
+                $('#airdrop_log_message').text('ERROR! address list is empty');
                 appState.loading = false;
                 return appState;
             }
 
             if (tokenAmount * addressArray.length  > TokenBalanceSigner) {
-                $('#token_log_message').text('ERROR! Not enough tokens');
+                $('#airdrop_log_message').text('ERROR! Not enough tokens');
                 appState.loading = false;
                 return appState;
             }
@@ -265,7 +265,7 @@ async function sendAddressControl(contractToken, contractAirdrop, ethers, config
             UserAllowanceToAirdrop = parseInt(ethers.utils.formatEther(UserAllowanceToAirdrop))
 
             if (tokenAmount * addressArray.length  > UserAllowanceToAirdrop) {
-                $('#token_log_message').text('ERROR! Not enough allowance');
+                $('#airdrop_log_message').text('ERROR! Not enough allowance');
                 appState.loading = false;
                 return appState;
             }
