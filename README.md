@@ -48,7 +48,7 @@ This is where the deployment of contracts ends. Now we need to configure the fil
 
 1. Open /production/ folder via VS Code.
 
-2. Specify the `RPC_URL`, `TOKEN_CONTRACT_ADDRESS`, and `AIRDROP_CONTRACT_ADDRESS` parameters you specified earlier in the .env file in config.js
+2. Specify the `RPC_URL`, `TOKEN_CONTRACT_ADDRESS` and `AIRDROP_CONTRACT_ADDRESS` parameters you specified earlier in the .env file in config.js
 
 3. Specify `TESTNET_ID` as chain_id
 
