@@ -1,5 +1,8 @@
 # Assignment 3 | TokenTeam26 & Airdrop
 
+Live demo: https://token.npiv.ru/
+> Works only on TBNB!
+
 ## How to use
 
 Everything in the `/deploy/` folder is intended to be used on local machine.
